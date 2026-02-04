@@ -1,0 +1,1 @@
+export { InstructorDetail } from './InstructorDetail'

@@ -1,0 +1,181 @@
+.class-detail-container {
+  padding: 2rem 0;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.detail-main {
+  min-height: 400px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-info h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #8b5cf6;
+  padding-bottom: 1rem;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item.highlight {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.info-label {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.info-value {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.info-item.highlight .info-value {
+  color: #8b5cf6;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.description-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.description-section h4 {
+  margin: 0 0 0.75rem 0;
+  color: #1f2937;
+}
+
+.description-section p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.benefits-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.benefits-section h4 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: #4b5563;
+}
+
+.benefit-icon {
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-cta {
+  text-align: center;
+}
+
+.sidebar-cta h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.sidebar-cta p {
+  margin: 0 0 1.5rem 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  padding: 0.5rem 0;
+  color: #4b5563;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+.not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.not-found h2 {
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar {
+    order: -1;
+  }
+
+  .info-item {
+    grid-template-columns: 1fr;
+  }
+
+  .info-label {
+    display: inline;
+    font-weight: 600;
+  }
+
+  .info-label::after {
+    content: ':';
+  }
+}

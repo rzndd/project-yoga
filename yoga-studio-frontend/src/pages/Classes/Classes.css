@@ -1,0 +1,46 @@
+.classes-container {
+  padding: 2rem 0;
+}
+
+.class-description {
+  color: #6b7280;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.class-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.info-badge {
+  display: inline-block;
+  background-color: #f3f4f6;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.error-message {
+  padding: 2rem;
+  background-color: #fee;
+  color: #c33;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.no-results p {
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin: 0;
+}

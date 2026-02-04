@@ -5,33 +5,37 @@ const instructors = [
   {
     id: 1,
     name: 'Marina Silva',
-    specialties: ['Hatha', 'Yin Yoga'],
+    specialty: 'Hatha Yoga, Yin Yoga',
     bio: 'Certificada internacionalmente com 10 anos de experiência. Apaixonada por ajudar iniciantes.',
-    classes: ['Hatha Yoga - Seg/Qua/Sex 08h', 'Yin Yoga - Dom 10h'],
+    experience: 10,
+    certifications: ['RYT 500', 'Yoga Alliance'],
     image: 'https://via.placeholder.com/200?text=Marina'
   },
   {
     id: 2,
     name: 'Carlos Santos',
-    specialties: ['Vinyasa', 'Flow'],
+    specialty: 'Vinyasa Flow',
     bio: 'Especialista em sequências dinâmicas. Transforma vidas através do yoga fluido.',
-    classes: ['Vinyasa Flow - Seg/Qui 10h', 'Vinyasa Flow - Ter 19h'],
+    experience: 8,
+    certifications: ['RYT 200', 'Power Yoga'],
     image: 'https://via.placeholder.com/200?text=Carlos'
   },
   {
     id: 3,
     name: 'Sofia Costa',
-    specialties: ['Yin Yoga', 'Meditação'],
+    specialty: 'Yin Yoga, Meditação',
     bio: 'Mestre em técnicas de relaxamento profundo. Cria ambientes de paz e tranquilidade.',
-    classes: ['Yin Yoga - Seg/Qui 18h30', 'Yin Yoga - Sab 11h'],
+    experience: 12,
+    certifications: ['RYT 500', 'Yin Yoga', 'Mindfulness'],
     image: 'https://via.placeholder.com/200?text=Sofia'
   },
   {
     id: 4,
     name: 'Rafael Oliveira',
-    specialties: ['Power Yoga', 'Força'],
+    specialty: 'Power Yoga',
     bio: 'Treinador especializado em yoga de força. Desafiador e motivador.',
-    classes: ['Power Yoga - Ter 06h', 'Power Yoga - Qua 17h', 'Power Yoga - Sex 08h'],
+    experience: 6,
+    certifications: ['RYT 200', 'Personal Training'],
     image: 'https://via.placeholder.com/200?text=Rafael'
   }
 ]

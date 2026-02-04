@@ -7,14 +7,15 @@ export function Input({
   className = '',
   ...props
 }) {
+  const showError = error && (touched === undefined || touched)
   return (
     <div className="form-group">
       {label && <label className="form-label">{label}</label>}
       <input
-        className={`form-input ${error && touched ? 'is-invalid' : ''} ${className}`}
+        className={`form-input ${showError ? 'is-invalid' : ''} ${className}`}
         {...props}
       />
-      {error && touched && <span className="form-error">{error}</span>}
+      {showError && <span className="form-error">{error}</span>}
     </div>
   )
 }
@@ -27,11 +28,12 @@ export function Select({
   className = '',
   ...props
 }) {
+  const showError = error && (touched === undefined || touched)
   return (
     <div className="form-group">
       {label && <label className="form-label">{label}</label>}
       <select
-        className={`form-input ${error && touched ? 'is-invalid' : ''} ${className}`}
+        className={`form-input ${showError ? 'is-invalid' : ''} ${className}`}
         {...props}
       >
         <option value="">Selecione...</option>
@@ -41,7 +43,7 @@ export function Select({
           </option>
         ))}
       </select>
-      {error && touched && <span className="form-error">{error}</span>}
+      {showError && <span className="form-error">{error}</span>}
     </div>
   )
 }
@@ -53,14 +55,15 @@ export function Textarea({
   className = '',
   ...props
 }) {
+  const showError = error && (touched === undefined || touched)
   return (
     <div className="form-group">
       {label && <label className="form-label">{label}</label>}
       <textarea
-        className={`form-input ${error && touched ? 'is-invalid' : ''} ${className}`}
+        className={`form-input ${showError ? 'is-invalid' : ''} ${className}`}
         {...props}
       />
-      {error && touched && <span className="form-error">{error}</span>}
+      {showError && <span className="form-error">{error}</span>}
     </div>
   )
 }

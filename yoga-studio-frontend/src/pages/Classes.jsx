@@ -10,7 +10,7 @@ const mockClasses = [
     instructor: 'Marina',
     description: 'Aula clássica focada em posições básicas e respiração',
     duration: 60,
-    maxParticipants: 20,
+    capacity: 20,
     image: 'https://via.placeholder.com/300x200?text=Hatha'
   },
   {
@@ -20,7 +20,7 @@ const mockClasses = [
     instructor: 'Carlos',
     description: 'Sequências fluidas e dinâmicas sincronizadas com a respiração',
     duration: 75,
-    maxParticipants: 25,
+    capacity: 25,
     image: 'https://via.placeholder.com/300x200?text=Vinyasa'
   },
   {
@@ -30,7 +30,7 @@ const mockClasses = [
     instructor: 'Sofia',
     description: 'Relaxamento profundo com posturas mantidas por longos períodos',
     duration: 90,
-    maxParticipants: 15,
+    capacity: 15,
     image: 'https://via.placeholder.com/300x200?text=YinYoga'
   },
   {
@@ -40,7 +40,7 @@ const mockClasses = [
     instructor: 'Rafael',
     description: 'Prática intensa focada em força e flexibilidade',
     duration: 60,
-    maxParticipants: 20,
+    capacity: 20,
     image: 'https://via.placeholder.com/300x200?text=PowerYoga'
   }
 ]

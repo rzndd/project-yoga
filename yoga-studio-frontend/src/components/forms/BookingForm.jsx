@@ -17,8 +17,7 @@ export function BookingForm({ item, itemType, onSubmit, onClose }) {
   const validationSchema = {
     name: [validators.required],
     email: [validators.required, validators.email],
-    phone: [validators.required, validators.phone],
-    message: [validators.required]
+    phone: [validators.required, validators.phone]
   }
 
   const handleChange = (e) => {

@@ -29,9 +29,8 @@ export function ClassDetail() {
   }
 
   const handleBooking = async (formData) => {
-    // Aqui você faria a chamada à API
-    console.log('Booking:', formData)
-    // await yogaService.createBooking(formData)
+    // Simula envio para API - em produção, usar yogaService.createBooking(formData)
+    await new Promise(resolve => setTimeout(resolve, 1000))
   }
 
   return (

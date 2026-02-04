@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useYoga } from '../../context/YogaContext'
 import { Container, Grid } from '../../components/layout'
-import { Card, CardBody, CardFooter, Button, Loading } from '../../components/common'
+import { Card, CardBody, CardFooter, Button, Loading, ErrorMessage } from '../../components/common'
 import { HeroSection } from '../../components/sections'
 import { SearchFilter } from '../../components/forms'
 import { truncateText } from '../../utils'
@@ -10,7 +10,7 @@ import './Classes.css'
 
 export function Classes() {
   const navigate = useNavigate()
-  const { classes, loading, error } = useYoga()
+  const { classes, loading, error, refetchData } = useYoga()
   const [filteredClasses, setFilteredClasses] = React.useState(classes || [])
   const [searchTerm, setSearchTerm] = React.useState('')
 
@@ -27,8 +27,8 @@ export function Classes() {
     setFilteredClasses(result)
   }, [classes, searchTerm])
 
-  if (loading) return <Loading message="Carregando aulas..." />
-  if (error) return <div className="error-message">Erro ao carregar: {error}</div>
+  if (loading) return <Loading message="Buscando as melhores aulas para você..." />
+  if (error) return <ErrorMessage message={error} onRetry={refetchData} />
 
   return (
     <>

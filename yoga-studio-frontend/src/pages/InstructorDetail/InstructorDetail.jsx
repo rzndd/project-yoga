@@ -30,7 +30,8 @@ export function InstructorDetail() {
   }
 
   const handleBooking = async (formData) => {
-    console.log('Booking:', formData)
+    // Simula envio para API - em produção, usar yogaService.createBooking(formData)
+    await new Promise(resolve => setTimeout(resolve, 1000))
   }
 
   return (

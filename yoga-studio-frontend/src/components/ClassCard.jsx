@@ -13,7 +13,7 @@ export default function ClassCard({ classData }) {
         <p className="class-description">{classData.description}</p>
         <div className="class-info">
           <span className="duration">⏱️ {classData.duration} min</span>
-          <span className="participants">👥 {classData.maxParticipants} places</span>
+          <span className="participants">👥 {classData.capacity} vagas</span>
         </div>
         <button className="btn-reserve">Reservar Aula</button>
       </div>

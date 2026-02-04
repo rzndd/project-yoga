@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useYoga } from '../../context/YogaContext'
 import { Container, Grid } from '../../components/layout'
-import { Card, CardBody, Button, Loading } from '../../components/common'
+import { Card, CardBody, Button, Loading, ErrorMessage } from '../../components/common'
 import { HeroSection } from '../../components/sections'
 import { SearchFilter } from '../../components/forms'
 import { truncateText } from '../../utils'
@@ -10,7 +10,7 @@ import './Instructors.css'
 
 export function Instructors() {
   const navigate = useNavigate()
-  const { instructors, loading, error } = useYoga()
+  const { instructors, loading, error, refetchData } = useYoga()
   const [filteredInstructors, setFilteredInstructors] = React.useState(instructors || [])
   const [searchTerm, setSearchTerm] = React.useState('')
 
@@ -27,8 +27,8 @@ export function Instructors() {
     setFilteredInstructors(result)
   }, [instructors, searchTerm])
 
-  if (loading) return <Loading message="Carregando instrutores..." />
-  if (error) return <div className="error-message">Erro ao carregar: {error}</div>
+  if (loading) return <Loading message="Conhecendo nossos instrutores..." />
+  if (error) return <ErrorMessage message={error} onRetry={refetchData} />
 
   return (
     <>

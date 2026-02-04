@@ -9,17 +9,24 @@ export default function InstructorCard({ instructor }) {
       <div className="instructor-info">
         <h3>{instructor.name}</h3>
         <p className="specialties">
-          {instructor.specialties.join(', ')}
+          {instructor.specialty}
         </p>
         <p className="bio">{instructor.bio}</p>
-        <div className="class-schedule">
-          <p><strong>Aulas:</strong></p>
-          <ul>
-            {instructor.classes.map((cls, index) => (
-              <li key={index}>{cls}</li>
-            ))}
-          </ul>
-        </div>
+        {instructor.experience && (
+          <p className="experience">
+            <strong>Experiência:</strong> {instructor.experience} anos
+          </p>
+        )}
+        {instructor.certifications && instructor.certifications.length > 0 && (
+          <div className="certifications">
+            <p><strong>Certificações:</strong></p>
+            <ul>
+              {instructor.certifications.map((cert, index) => (
+                <li key={index}>{cert}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -1,20 +1,62 @@
+.home-page {
+  width: 100%;
+}
+
+.hero-home {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.hero-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-cta-buttons a {
+  text-decoration: none;
+}
+
 .home-container {
-  padding: 3rem 0;
+  padding: 4rem 1rem;
 }
 
 .stats-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
 .stat-card {
   background: white;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
 }
 
 .stat-card h3 {
@@ -26,17 +68,27 @@
 .stat-card p {
   color: #6b7280;
   margin: 0;
+  font-size: 0.95rem;
 }
 
 .features-section {
-  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .features-section h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
   color: #1f2937;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features-grid {
@@ -48,33 +100,71 @@
 .feature-card {
   background: white;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
 }
 
 .feature-icon {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .feature-card h3 {
   color: #1f2937;
   margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .feature-card p {
   color: #6b7280;
   line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.cta-section p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.cta-section a {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-home-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   .stats-section {
     grid-template-columns: 1fr;
   }

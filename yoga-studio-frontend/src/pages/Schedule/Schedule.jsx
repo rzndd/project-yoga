@@ -1,16 +1,16 @@
 import React from 'react'
 import { useYoga } from '../../context/YogaContext'
 import { Container } from '../../components/layout'
-import { Loading } from '../../components/common'
+import { Loading, ErrorMessage } from '../../components/common'
 import { HeroSection } from '../../components/sections'
 import { formatTime } from '../../utils'
 import './Schedule.css'
 
 export function Schedule() {
-  const { schedule, loading, error } = useYoga()
+  const { schedule, loading, error, refetchData } = useYoga()
 
-  if (loading) return <Loading message="Carregando agenda..." />
-  if (error) return <div className="error-message">Erro ao carregar: {error}</div>
+  if (loading) return <Loading message="Preparando sua agenda da semana..." />
+  if (error) return <ErrorMessage message={error} onRetry={refetchData} />
 
   // Agrupar por dia da semana
   const groupedByDay = schedule?.reduce((acc, item) => {

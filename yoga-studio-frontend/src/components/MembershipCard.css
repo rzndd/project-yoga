@@ -1,19 +1,19 @@
 .membership-card {
-  background: white;
+  background: #fdfcfa;
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e7e5e4;
+  transition: transform 0.3s, border-color 0.3s;
   position: relative;
 }
 
 .membership-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+  border-color: #d6cfc9;
 }
 
 .membership-card.popular {
-  border: 2px solid #3498db;
+  border: 2px solid #7c9a82;
   transform: scale(1.05);
 }
 
@@ -22,7 +22,7 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: #3498db;
+  background: #7c9a82;
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 20px;
@@ -32,7 +32,7 @@
 
 .membership-card h3 {
   margin: 0 0 1rem 0;
-  color: #2c3e50;
+  color: #292524;
   font-size: 1.5rem;
 }
 
@@ -43,11 +43,11 @@
 .amount {
   font-size: 2rem;
   font-weight: bold;
-  color: #3498db;
+  color: #7c9a82;
 }
 
 .period {
-  color: #7f8c8d;
+  color: #78716c;
   font-size: 0.9rem;
 }
 
@@ -59,8 +59,8 @@
 
 .features li {
   padding: 0.5rem 0;
-  color: #555;
-  border-bottom: 1px solid #ecf0f1;
+  color: #57534e;
+  border-bottom: 1px solid #e7e5e4;
 }
 
 .features li:last-child {
@@ -70,22 +70,24 @@
 .btn-subscribe {
   width: 100%;
   padding: 0.75rem;
-  background: #ecf0f1;
-  color: #2c3e50;
-  border-radius: 4px;
+  background: #f5f5f4;
+  color: #44403c;
+  border-radius: 6px;
+  border: 1px solid #e7e5e4;
   transition: all 0.3s;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .btn-subscribe:hover {
-  background: #bdc3c7;
+  background: #e7e5e4;
 }
 
 .btn-subscribe.popular {
-  background: #3498db;
+  background: #7c9a82;
   color: white;
+  border-color: #7c9a82;
 }
 
 .btn-subscribe.popular:hover {
-  background: #2980b9;
+  background: #6b8a72;
 }

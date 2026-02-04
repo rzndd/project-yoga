@@ -20,9 +20,9 @@
 
 .detail-info h3 {
   margin: 0;
-  color: #1f2937;
+  color: #292524;
   font-size: 1.5rem;
-  border-bottom: 2px solid #8b5cf6;
+  border-bottom: 2px solid #7c9a82;
   padding-bottom: 1rem;
 }
 
@@ -31,28 +31,28 @@
   grid-template-columns: 150px 1fr;
   gap: 1rem;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f5f5f4;
 }
 
 .info-item.highlight {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+  background: rgba(124, 154, 130, 0.08);
   padding: 1rem;
   border-radius: 6px;
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(124, 154, 130, 0.2);
 }
 
 .info-label {
-  color: #6b7280;
+  color: #78716c;
   font-size: 0.95rem;
 }
 
 .info-value {
-  color: #1f2937;
+  color: #292524;
   font-weight: 500;
 }
 
 .info-item.highlight .info-value {
-  color: #8b5cf6;
+  color: #7c9a82;
   font-size: 1.25rem;
   font-weight: 700;
 }

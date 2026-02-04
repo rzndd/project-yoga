@@ -1,14 +1,14 @@
 .class-card {
-  background: white;
+  background: #fdfcfa;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e7e5e4;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
 .class-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+  border-color: #d6cfc9;
 }
 
 .class-image {
@@ -29,18 +29,18 @@
 
 .class-content h3 {
   margin: 0 0 0.5rem 0;
-  color: #2c3e50;
+  color: #292524;
 }
 
 .class-level {
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: #78716c;
   margin: 0.5rem 0;
 }
 
 .class-instructor {
   font-size: 0.9rem;
-  color: #3498db;
+  color: #7c9a82;
   margin: 0.5rem 0;
 }
 
@@ -65,12 +65,12 @@
 .btn-reserve {
   width: 100%;
   padding: 0.75rem;
-  background: #3498db;
+  background: #7c9a82;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: background 0.3s;
 }
 
 .btn-reserve:hover {
-  background: #2980b9;
+  background: #6b8a72;
 }

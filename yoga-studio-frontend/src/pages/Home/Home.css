@@ -3,25 +3,24 @@
 }
 
 .hero-home {
-  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
-  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #f5f1ec 0%, #fdfcfa 100%);
+  padding: 6rem 2rem;
   text-align: center;
-  color: white;
 }
 
 .hero-home-content h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #292524;
+  font-weight: 500;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  opacity: 0.95;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
-  color: white;
+  font-size: 1.15rem;
+  max-width: 550px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+  color: #57534e;
 }
 
 .hero-cta-buttons {
@@ -36,113 +35,122 @@
 }
 
 .home-container {
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .stats-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-bottom: 5rem;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
   text-align: center;
 }
 
 .stat-card {
-  background: white;
-  padding: 2rem;
+  background: #fdfcfa;
+  padding: 2rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  border: 1px solid #e7e5e4;
+  transition: all 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
+  border-color: #d4c5b5;
+  transform: translateY(-2px);
 }
 
 .stat-card h3 {
-  font-size: 2.5rem;
-  color: #8b5cf6;
+  font-size: 2.25rem;
+  color: #7c9a82;
   margin: 0 0 0.5rem 0;
+  font-weight: 500;
 }
 
 .stat-card p {
-  color: #6b7280;
+  color: #78716c;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .features-section {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 .features-section h2 {
   text-align: center;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
-  color: #1f2937;
+  font-size: 1.75rem;
+  color: #292524;
+  font-weight: 500;
 }
 
 .section-subtitle {
   text-align: center;
-  color: #6b7280;
+  color: #78716c;
   margin-bottom: 3rem;
-  max-width: 600px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1rem;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 .feature-card {
-  background: white;
+  background: #fdfcfa;
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e7e5e4;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+  border-color: #7c9a82;
+  transform: translateY(-4px);
 }
 
 .feature-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .feature-card h3 {
-  color: #1f2937;
+  color: #44403c;
   margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .feature-card p {
-  color: #6b7280;
+  color: #78716c;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .cta-section {
-  background: linear-gradient(135deg, #f3e8ff 0%, #ede9fe 100%);
+  background: #f5f1ec;
   padding: 4rem 2rem;
   border-radius: 16px;
   text-align: center;
+  border: 1px solid #e7e5e4;
 }
 
 .cta-section h2 {
-  color: #1f2937;
+  color: #292524;
   margin-bottom: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .cta-section p {
-  color: #6b7280;
+  color: #78716c;
   margin-bottom: 2rem;
 }
 

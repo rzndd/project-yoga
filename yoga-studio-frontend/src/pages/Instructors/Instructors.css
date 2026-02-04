@@ -9,7 +9,7 @@
 }
 
 .instructor-specialty {
-  color: #8b5cf6;
+  color: #7c9a82;
   font-weight: 600;
   margin: 0.5rem 0;
 }
@@ -23,8 +23,8 @@
 
 .card-footer {
   padding: 1.5rem;
-  border-top: 1px solid #e5e7eb;
-  background-color: #f9fafb;
+  border-top: 1px solid #e7e5e4;
+  background-color: #faf9f7;
   display: flex;
   gap: 1rem;
   justify-content: flex-end;

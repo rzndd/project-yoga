@@ -18,7 +18,7 @@
 .instructor-image-large {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e7e5e4;
 }
 
 .instructor-image-large img {
@@ -29,13 +29,13 @@
 
 .instructor-header h2 {
   margin: 0 0 0.5rem 0;
-  color: #1f2937;
+  color: #292524;
   font-size: 2rem;
 }
 
 .specialty {
   margin: 0 0 1.5rem 0;
-  color: #8b5cf6;
+  color: #7c9a82;
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -43,17 +43,17 @@
 .bio-section {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #e7e5e4;
 }
 
 .bio-section h3 {
   margin: 0 0 0.75rem 0;
-  color: #1f2937;
+  color: #292524;
 }
 
 .bio-section p {
   margin: 0;
-  color: #4b5563;
+  color: #57534e;
   line-height: 1.8;
 }
 
@@ -61,22 +61,22 @@
   display: flex;
   gap: 0.75rem;
   padding: 0.75rem 0;
-  color: #4b5563;
+  color: #57534e;
 }
 
 .info-item strong {
-  color: #1f2937;
+  color: #292524;
 }
 
 .certifications {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #e7e5e4;
 }
 
 .certifications h3 {
   margin: 0 0 1rem 0;
-  color: #1f2937;
+  color: #292524;
 }
 
 .certifications ul {
@@ -90,12 +90,12 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 0;
-  color: #4b5563;
+  color: #57534e;
 }
 
 .certifications li::before {
   content: '✓';
-  color: #10b981;
+  color: #7c9a82;
   font-weight: bold;
   font-size: 1.25rem;
 }

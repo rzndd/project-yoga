@@ -8,7 +8,7 @@
 .form-label {
   font-weight: 600;
   font-size: 0.95rem;
-  color: #1f2937;
+  color: #44403c;
 }
 
 .form-input {
@@ -22,8 +22,8 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  border-color: #7c9a82;
+  box-shadow: 0 0 0 3px rgba(124, 154, 130, 0.15);
 }
 
 .form-input.is-invalid {

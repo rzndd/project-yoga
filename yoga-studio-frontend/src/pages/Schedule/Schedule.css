@@ -9,14 +9,14 @@
 }
 
 .schedule-day {
-  background: white;
+  background: #fdfcfa;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e7e5e4;
 }
 
 .day-title {
-  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  background: #7c9a82;
   color: white;
   padding: 1rem;
   margin: 0;
@@ -36,7 +36,7 @@
 }
 
 .schedule-item:hover {
-  background-color: #f9f9f9;
+  background-color: #faf9f7;
 }
 
 .schedule-item:last-child {
@@ -45,7 +45,7 @@
 
 .schedule-item .time {
   font-weight: 700;
-  color: #8b5cf6;
+  color: #7c9a82;
   font-size: 1.25rem;
   min-width: 60px;
 }
@@ -56,18 +56,18 @@
 
 .schedule-item h4 {
   margin: 0 0 0.25rem 0;
-  color: #1f2937;
+  color: #292524;
 }
 
 .schedule-item .instructor {
   margin: 0;
   font-size: 0.875rem;
-  color: #6b7280;
+  color: #78716c;
 }
 
 .schedule-item .capacity {
   font-size: 0.875rem;
-  color: #9ca3af;
+  color: #a8a29e;
   white-space: nowrap;
 }
 
